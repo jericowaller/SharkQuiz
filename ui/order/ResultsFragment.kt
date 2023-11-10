@@ -16,6 +16,7 @@
 package com.example.sharktest.ui.order
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,6 +43,9 @@ class ResultsFragment : Fragment() {
     ): View? {
         _binding = FragmentResultsBinding.inflate(inflater, container, false)
         val root = binding.root
+        val image_name = "shark" + sharedViewModel.points.value + "_image"
+        val image_id = resources.getIdentifier(image_name, "drawable", context?.packageName)
+        binding.sharkImage.setImageResource(image_id)
 
         return root
     }

@@ -29,17 +29,17 @@ object DataSource {
         ),
         1 to
         Shark(
-            name = "Lemon shark",
+            name = "Whale shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         2 to
         Shark(
-            name = "Thresher shark",
+            name = "Basking shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         3 to
         Shark(
-            name = "Mako shark",
+            name = "Tiger shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         4 to
@@ -49,12 +49,12 @@ object DataSource {
         ),
         5 to
         Shark(
-            name = "Cookiecutter shark",
+            name = "Wobbegong shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         6 to
         Shark(
-            name = "White shark",
+            name = "Mako shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         7 to
@@ -64,29 +64,14 @@ object DataSource {
         ),
         8 to
         Shark(
-            name = "Basking shark",
+            name = "Thresher shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
         ),
         9 to
         Shark(
-            name = "Whale shark",
+            name = "White shark",
             description = "Whole cauliflower, brined, roasted, and deep fried",
-        ),
-        "wobbegong" to
-        Shark(
-            name = "Wobbegong shark",
-            description = "Whole cauliflower, brined, roasted, and deep fried",
-        ),
-        "hammerhead" to
-        Shark(
-            name = "Hammerhead shark",
-            description = "Whole cauliflower, brined, roasted, and deep fried",
-        ),
-        "sawtooth" to
-        Shark(
-            name = "Sawtooth shark",
-            description = "Whole cauliflower, brined, roasted, and deep fried",
-        ),
+        )
 
 
     )

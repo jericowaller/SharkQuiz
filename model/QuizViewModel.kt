@@ -30,10 +30,10 @@ class QuizViewModel : ViewModel() {
     val shark: LiveData<Shark?> = _shark
 
     // Current points
-    private val _points = MutableLiveData<Int?>(-1)
+    private val _points = MutableLiveData<Int?>(0)
     val points: LiveData<Int?> = _points
 
-    var currentAdd = -1
+    var currentAdd = 0
 
 
     fun updateShark() {
@@ -41,10 +41,8 @@ class QuizViewModel : ViewModel() {
     }
 
     fun updatePoints(tpoints: Int) {
-        if (_points.value != -1) {
+        if (_points.value != 0) {
             _points.value = _points.value?.minus(currentAdd)
-        } else {
-            _points.value = 0
         }
         currentAdd = tpoints
         _points.value = _points.value?.plus(currentAdd)
@@ -57,7 +55,7 @@ class QuizViewModel : ViewModel() {
 
         fun resetQuiz() {
             _shark.value = null
-            _points.value = -1
-            currentAdd = -1
+            _points.value = 0
+            currentAdd = 0
         }
     }
