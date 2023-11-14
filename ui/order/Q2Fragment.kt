@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -26,6 +27,7 @@ class Q2Fragment : Fragment() {
     ): View? {
         _binding = FragmentQ2Binding.inflate(inflater, container, false)
         val root = binding.root
+        (activity as AppCompatActivity).supportActionBar?.title = "Question 2"
         return root
     }
 

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.sharktest.R
@@ -23,6 +24,7 @@ class StartQuizFragment : Fragment() {
         binding.startQuizBtn.setOnClickListener {
             findNavController().navigate(R.id.action_startQuizFragment_to_q1Fragment)
         }
+        (activity as AppCompatActivity).supportActionBar?.title = "Shark Personality Quiz"
         return root
     }
 

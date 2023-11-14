@@ -20,6 +20,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -46,7 +47,7 @@ class ResultsFragment : Fragment() {
         val image_name = "shark" + sharedViewModel.points.value + "_image"
         val image_id = resources.getIdentifier(image_name, "drawable", context?.packageName)
         binding.sharkImage.setImageResource(image_id)
-
+        (activity as AppCompatActivity).supportActionBar?.title = "Final Results"
         return root
     }
 

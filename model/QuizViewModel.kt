@@ -58,4 +58,5 @@ class QuizViewModel : ViewModel() {
             _points.value = 0
             currentAdd = 0
         }
+
     }
